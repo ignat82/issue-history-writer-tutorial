@@ -7,18 +7,23 @@
         <param name="plugin-logo">images/pluginLogo.png</param>
     </plugin-info>
 
+    <ao key="${atlassian.plugin.key}-ao-module">
+        <description>The AO module for storing issue log messages at db.</description>
+        <entity>ru.samokat.atlassian.jira.tutorials.historywriter.entity.LogMessageEntry</entity>
+    </ao>
+
     <!-- add our i18n resource -->
     <resource type="i18n" name="i18n" location="issue-history-writer-tutorial"/>
-    
+
     <!-- add our web resources -->
     <web-resource key="issue-history-writer-tutorial-resources" name="issue-history-writer-tutorial Web Resources">
         <dependency>com.atlassian.auiplugin:ajs</dependency>
-        
+
         <resource type="download" name="issue-history-writer-tutorial.css" location="/css/issue-history-writer-tutorial.css"/>
         <resource type="download" name="issue-history-writer-tutorial.js" location="/js/issue-history-writer-tutorial.js"/>
         <resource type="download" name="images/" location="/images"/>
 
         <context>issue-history-writer-tutorial</context>
     </web-resource>
-    
+
 </atlassian-plugin>
