@@ -145,8 +145,10 @@
     </build>
 
     <properties>
-        <jira.version>9.12.2</jira.version>
-        <amps.version>8.14.3</amps.version>
+        <jira.version>8.22.0</jira.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <amps.version>8.1.2</amps.version>
         <plugin.testrunner.version>2.0.5</plugin.testrunner.version>
         <atlassian.spring.scanner.version>2.2.4</atlassian.spring.scanner.version>
         <!-- This property ensures consistency between the key in atlassian-plugin.xml and the OSGi bundle's key. -->
@@ -154,8 +156,6 @@
         <!-- TestKit version 6.x for JIRA 6.x -->
         <testkit.version>6.3.11</testkit.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
 </project>
