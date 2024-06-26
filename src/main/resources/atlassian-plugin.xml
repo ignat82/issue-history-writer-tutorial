@@ -7,6 +7,16 @@
         <param name="plugin-logo">images/pluginLogo.png</param>
     </plugin-info>
 
+    <issue-tabpanel key="log-messages-issue-tab-panel"
+                    name="Log Messages Issue Tab Panel"
+                    i18n-name-key="log-messages-issue-tab-panel.name"
+                    class="ru.samokat.atlassian.jira.tutorials.historywriter.tabpanel.LogMessagesIssueTabPanel">
+        <description key="log-messages-issue-tab-panel.description">The Log Messages Issue Tab Panel Plugin</description>
+        <label key="log-messages-issue-tab-panel.label"></label>
+        <order>10</order>
+        <resource type="velocity" name="view" location="templates/log-messages-issue-tab-panel.vm"/>
+    </issue-tabpanel>
+
     <ao key="${atlassian.plugin.key}-ao-module">
         <description>The AO module for storing issue log messages at db.</description>
         <entity>ru.samokat.atlassian.jira.tutorials.historywriter.entity.LogMessageEntry</entity>
