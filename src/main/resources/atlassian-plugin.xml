@@ -7,6 +7,16 @@
         <param name="plugin-logo">images/pluginLogo.png</param>
     </plugin-info>
 
+    <rest name="${project.groupId}.historywriter.rest.name"
+          key="${project.groupId}.historywriter.rest"
+          path="/issue_history_writer"
+          version="1.0">
+        <description key="${atlassian.plugin.key}.rest.description">
+            to write to issue log messages tab by rest
+        </description>
+        <package>${project.groupId}.historywriter.rest</package>
+    </rest>
+
     <issue-tabpanel key="log-messages-issue-tab-panel"
                     name="Log Messages Issue Tab Panel"
                     i18n-name-key="log-messages-issue-tab-panel.name"
